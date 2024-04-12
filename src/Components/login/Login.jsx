@@ -43,7 +43,7 @@ export default function Login() {
     async function dataAuth() {
        
         dispatch(setLoader(true));
-        const data = await fetch('http://localhost:4000/api/login', {
+        const data = await fetch('http://13.232.64.29:4000/api/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
