@@ -97,6 +97,9 @@ export default function SingUp() {
 
     return (
         <div className="loginWrapper">
+            <head>
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+            </head>
           
         
           <div className="LoginMainDiv">
