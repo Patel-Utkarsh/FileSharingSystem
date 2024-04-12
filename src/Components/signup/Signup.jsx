@@ -46,7 +46,7 @@ export default function SingUp() {
     async function dataAuth() {
        
         dispatch(setLoader(true));
-        const data = await fetch('http://13.232.64.29:4000/api/signup', {
+        const data = await fetch('//13.232.64.29:4000/api/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
