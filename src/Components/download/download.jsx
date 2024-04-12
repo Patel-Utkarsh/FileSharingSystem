@@ -19,7 +19,7 @@ export default function Download() {
     console.log(id);
 
     async function downloadData() {
-        return window.location.href =  `http://localhost:4000/api/file/${id}`;
+        return window.location.href =  `http://13.232.64.29:4000/api/file/${id}`;
       
     
     }
@@ -28,7 +28,7 @@ export default function Download() {
         dispatch(setLoader(true));
 
         try {
-            const data = await axios.post('http://localhost:4000/api/linkData', {
+            const data = await axios.post('http://13.232.64.29:4000/api/linkData', {
                 code: id
 
             })
