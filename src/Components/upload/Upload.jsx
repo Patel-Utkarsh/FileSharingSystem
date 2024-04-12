@@ -45,7 +45,7 @@ export default function UploadSystem(){
         formdata.append('file',uploadFile);
         formdata.append('title',uploadFile.name);
         formdata.append('id',user._id);
-        const res = await axios.post('http://localhost:4000/api/upload',formdata,{
+        const res = await axios.post('http://13.232.64.29:4000/api/upload',formdata,{
             onUploadProgress : (progressEvent) => {
                 const percentCompleted = Math.round(
                     (progressEvent.loaded * 100) / progressEvent.total
