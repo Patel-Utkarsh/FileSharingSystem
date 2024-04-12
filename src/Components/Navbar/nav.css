@@ -1,0 +1,76 @@
+*{
+    font-family: 'Fjalla One'
+}
+.navWrapper{
+    width: 100%;
+  
+    background-color: #5865f2;
+ 
+}
+
+#logo{
+    height: 70px;
+}
+
+.navInnerDiv1{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navInnerDiv2{
+    display: flex;
+}
+
+#logoName{
+    color: white;
+    font-size: 30px;
+    font-weight:700;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.navInnerDiv3{
+    margin-top: 13px;
+}
+
+#loginBtn{
+    background-color: white;
+    color: black;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+ 
+}
+
+#signUpBtn{
+    background-color: aqua;
+    color: black;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#profileImg{
+  
+   height: 50px;
+}
+
+@media (max-width : 720px) {
+
+    .navInnerDiv1{
+        width: 95%;
+    }
+    
+}
+

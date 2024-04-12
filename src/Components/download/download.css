@@ -1,0 +1,53 @@
+.errorClassNoPage{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.downloadInnerDiv1{
+
+    height: 30vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.downloadWrapper{
+    color: black;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    background-color: #e4e5f0;
+    align-items: center;
+}
+
+#downloadFileImg{
+    height: 100px;
+}
+
+.downloadInnerDiv2{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#dwnlBtn{
+    background-color: #0070f0;
+    height: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#pageTitle{
+    max-width: 100%;
+    overflow-y: auto;
+}
+
+#uploadDate{
+    color: green;
+}

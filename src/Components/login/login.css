@@ -1,0 +1,56 @@
+.loginWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 98vw;
+    font-weight: bold;
+}
+
+.LoginMainDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid black;
+  
+}
+
+#loginDlg{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 70px;
+    color: gray;
+}
+
+#em{
+    padding: 15px;
+   width: 300px;
+   margin-bottom: 10px;
+}
+
+::placeholder{
+    margin-left: 100px;
+}
+
+#login{
+    width: 300px;
+    background-color: #a435f0;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.errorClassLogin{
+    display: flex;
+    margin-left: 15px;
+   padding-bottom: 10px;
+   color: red;
+}
+
+#forgotPassDialog{
+    color: #725af9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
