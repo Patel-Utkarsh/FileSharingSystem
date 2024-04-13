@@ -28,6 +28,8 @@ export default function MyAccount() {
             linkCode : deleteId
         })
 
+        console.log(data);
+
       const user_Info =   await userData(user._id);
      // console.log(user_Info)
         dispatch(setUser(user_Info.data.userData));
