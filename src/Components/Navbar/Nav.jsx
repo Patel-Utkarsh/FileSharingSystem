@@ -29,7 +29,7 @@ export default function Navbar() {
                             <img id="profileImg" src="https://res.cloudinary.com/dhfas7qft/image/upload/v1712758061/output_trc7vd.png" alt="" />
                         </Link> : 
 
-                        <div>
+                        <div className = "navMenu">
                              <Link to={'/login'}>  <button id="loginBtn">Login</button> </Link>
 
                               <Link to={'/signup'}><button id="signUpBtn">Sign Up</button></Link>  
