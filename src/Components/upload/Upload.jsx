@@ -34,7 +34,7 @@ export default function UploadSystem(){
 
     async function uploadData() {
         if(!user) {
-            navigate('/myAccount');
+            navigate('/login');
             return;
             
         }
