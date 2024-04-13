@@ -55,12 +55,7 @@ export default function UploadSystem(){
             }
 
         })
-        dispatch(setLoader(true))
-        const user_Info =   await userData(user._id);
-        console.log(user_Info)
-           dispatch(setUser(user_Info.data.userData));
-           localStorage.setItem('user123',JSON.stringify(user_Info.data.userData));
-           dispatch(setLoader(false))
+      
 
         navigate('/myAccount');
         toast.success('File Uploaded successfully')
