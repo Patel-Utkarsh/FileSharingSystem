@@ -66,7 +66,7 @@ export default function MyAccount() {
                             return (<div className="linksDiv">
                                 <p id="linkTitle">{element.title}</p>
                                 <p id="linkDwnlds">{element.downloads}</p>
-                                <p id="cpyBtn" style={{ cursor: 'pointer' }} onClick={() => { navigator.clipboard.writeText(`http://localhost:3000/file/${element.linkCode}`); toast.success('Link Copied') }}><FaCopy color="#5865f2" /></p>
+                                <p id="cpyBtn" style={{ cursor: 'pointer' }} onClick={() => { navigator.clipboard.writeText(`https://databridge-eight.vercel.app/file/${element.linkCode}`); toast.success('Link Copied') }}><FaCopy color="#5865f2" /></p>
                                 <p><MdDelete onClick={()=>{setDeleteFile(true);setDeleteId(element.linkCode)}} style={{cursor : 'pointer'}} color="red" /></p>
 
 
