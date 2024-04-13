@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 import { toast } from "react-toastify";
 import userData from "../../helper/userInfo";
 import { setUser } from "../../store/slices/auth";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import axios from "axios";
 
 import { setLoader } from "../../store/slices/auth";
@@ -16,10 +16,27 @@ export default function MyAccount() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const {user,loader} = useSelector((state) => state.auth)
+    if(!user) navigate('/login')
   
     const [deleteFile, setDeleteFile] = useState(false);
     const [deleteId,setDeleteId] = useState(null);
-   // console.log(user);
+
+       async function getData(){
+    dispatch(setLoader(true))
+    const user_Info =   await userData(user._id);
+     // console.log(user_Info)
+        dispatch(setUser(user_Info.data.userData));
+        localStorage.setItem('user123',JSON.stringify(user_Info.data.userData));
+        dispatch(setLoader(false))
+
+   }
+
+   useEffect(()=>{
+    getData();
+      
+
+   },[])
+  
 
     async function delete_file() {
         dispatch(setLoader(true))
