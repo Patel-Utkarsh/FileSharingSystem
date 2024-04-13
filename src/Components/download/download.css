@@ -51,3 +51,11 @@
 #uploadDate{
     color: green;
 }
+
+
+@media (max-width : 720px) {
+    .downloadInnerDiv1 {
+        height: 25vh;
+    }
+    
+}
