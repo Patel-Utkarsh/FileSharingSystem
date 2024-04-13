@@ -89,8 +89,10 @@
 #uploadingFileName{
     font-size: 25px;
     font-weight: bold;
+    max-width: 100%;
 }
 .uploadingInnerDiv3{
+     max-width: 90%;
     display: flex;
     background-color: white;
     padding: 10px;
