@@ -23,7 +23,7 @@ export default function MyAccount() {
 
     async function delete_file() {
         dispatch(setLoader(true))
-      const data =   await axios.post('http://13.232.64.29:4000/api/deleteFile',{
+      const data =   await axios.post('https://databridge-1544.onrender.com/api/deleteFile',{
             id : user._id,
             linkCode : deleteId
         })
