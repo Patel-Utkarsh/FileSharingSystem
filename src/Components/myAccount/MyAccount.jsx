@@ -16,7 +16,10 @@ export default function MyAccount() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const {user,loader} = useSelector((state) => state.auth)
-    if(!user) navigate('/login')
+    if(!user) {
+        navigate('/login')
+        return
+    }
   
     const [deleteFile, setDeleteFile] = useState(false);
     const [deleteId,setDeleteId] = useState(null);
